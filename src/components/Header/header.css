@@ -1,0 +1,44 @@
+.header-main {
+  display: flex;
+  flex: 1 1 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4rem;
+  background-color: var(--dark-yellow);
+}
+/* .header-main > * {
+  width: 30%;
+}
+.header-main:nth-child(2) {
+  display: flex;
+  justify-content: center;
+} */
+
+.header-main__nav {
+  font-family: var(--font-2);
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.header-logo {
+  font-family: var(--font-2);
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.header-auth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-auth__login-img {
+  width: 3rem;
+  margin-right: 2rem;
+}
+.header-auth__login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2rem;
+}
