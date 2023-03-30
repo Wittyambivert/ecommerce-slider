@@ -1,0 +1,11 @@
+.nopage-wrapper {
+  margin-top: 10rem;
+  margin-bottom: 40rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nopage__title {
+  color: var(--black);
+}

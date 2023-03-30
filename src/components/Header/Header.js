@@ -1,11 +1,16 @@
 import "./header.css";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
     <>
-      <div className="header-main">
-        <nav className="header-main__nav">Menu</nav>
-        <div className="header-logo">R.V</div>
+      <nav className="header-main">
+        <div className="header-main__nav">
+          <NavLink to="/menu">Menu</NavLink>
+        </div>
+        <div className="header-logo">
+          <NavLink to="/">R.V</NavLink>
+        </div>
         <div className="header-auth">
           <div>Cart (0)</div>
           <div>
@@ -15,7 +20,7 @@ const Header = () => {
             </div>
           </div>
         </div>
-      </div>
+      </nav>
     </>
   );
 };

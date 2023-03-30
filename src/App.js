@@ -1,16 +1,21 @@
 import "./App.css";
+import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Banner from "./components/Banner/Banner";
-import Hero from "./components/Hero/Hero";
-import ProductSlider from "./components/ProductSlider/ProductSlider";
+import Home from "./pages/Home/Home";
+import Menu from "./pages/Menu/Menu";
+import PageNotFound from "./pages/404/PageNotFound";
 
 function App() {
   return (
     <>
       <Banner />
       <Header />
-      <Hero />
-      <ProductSlider />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/menu" element={<Menu />} />
+        <Route path="*" element={<PageNotFound />} />
+      </Routes>
     </>
   );
 }

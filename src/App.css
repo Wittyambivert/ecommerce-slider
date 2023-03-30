@@ -23,3 +23,8 @@ body {
 img {
   height: 100%;
 }
+
+nav a {
+  text-decoration: none;
+  color: inherit;
+}

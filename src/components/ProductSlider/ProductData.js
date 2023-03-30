@@ -68,3 +68,40 @@ export const productsData = [
     price: "$34.5",
   },
 ];
+
+export const blogData = [
+  {
+    id: 1,
+    title: "Implemented attitude-oriented parallelism",
+    description: "Reposition Gastric Artery, Open Approach",
+  },
+  {
+    id: 2,
+    title: "Phased local complexity",
+    description:
+      "Bypass Abdominal Aorta to Right Internal Iliac Artery with Nonautologous Tissue Substitute, Open Approach",
+  },
+  {
+    id: 3,
+    title: "Networked contextually-based initiative",
+    description:
+      "Revision of Nonautologous Tissue Substitute in Upper Vein, Percutaneous Endoscopic Approach",
+  },
+  // {
+  //   id: 4,
+  //   title: "Cross-platform system-worthy attitude",
+  //   description:
+  //     "Replacement of Left Metatarsal with Autologous Tissue Substitute, Open Approach",
+  // },
+  // {
+  //   id: 5,
+  //   title: "Multi-channelled transitional synergy",
+  //   description: "Repair Right Femoral Artery, Percutaneous Approach",
+  // },
+  // {
+  //   id: 6,
+  //   title: "Programmable high-level moderator",
+  //   description:
+  //     "Removal of Drainage Device from Adrenal Gland, External Approach",
+  // },
+];
