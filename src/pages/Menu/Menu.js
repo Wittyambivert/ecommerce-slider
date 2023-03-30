@@ -9,17 +9,27 @@ import { blogData } from "../../components/ProductSlider/ProductData";
 const Menu = () => {
   const [blogs, setBlog] = useState(blogData);
 
+  const handleDelete = (id) => {
+    const remove = blogs.filter((blog) => blog.id !== id);
+    setBlog(remove);
+  };
+
   return (
     <>
       <div className="section-b">
         <div className="menu-wrapper">
           <MenuNavbar />
-          <Blog blogs={blogs} title="First Section" />
+          <Blog
+            blogs={blogs}
+            title="First Section"
+            handleDelete={handleDelete}
+          />
           <Blog
             blogs={blogs.filter(
               (blog) => blog.title === "Phased local complexity"
             )}
             title="Second Section"
+            handleDelete={handleDelete}
           />
         </div>
       </div>

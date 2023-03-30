@@ -1,4 +1,4 @@
-const Blog = ({ blogs, title }) => {
+const Blog = ({ blogs, title, handleDelete }) => {
   return (
     <>
       <h3 style={{ marginBottom: "2rem", color: "var(--dark-yellow)" }}>
@@ -8,6 +8,9 @@ const Blog = ({ blogs, title }) => {
         <div className="body" key={data.id}>
           <h2>{data.title}</h2>
           <p>{data.description}</p>
+          <button className="delete" onClick={() => handleDelete(data.id)}>
+            Delete
+          </button>
         </div>
       ))}
     </>
