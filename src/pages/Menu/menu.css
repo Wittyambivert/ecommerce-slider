@@ -44,18 +44,23 @@
   border-radius: 1rem;
   background: white;
 }
+
+a {
+  text-decoration: none;
+}
 .body:hover {
   box-shadow: 2px 2px 4px 3px rgb(232, 229, 155, 0.4);
   cursor: pointer;
 }
-.body > h2 {
+.body h2 {
   color: var(--black);
   font-size: 2rem;
   font-family: inherit;
   font-weight: 600;
   margin-bottom: 1rem;
+  text-align: left;
 }
-.body > p {
+.body p {
   font-weight: 400;
   font-size: 1.4rem;
   color: #1b1a1166;
@@ -63,4 +68,32 @@
 
 .delete {
   margin-top: 4rem;
+}
+
+/* New Blog */
+.create {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.create label {
+  text-align: left;
+  display: block;
+}
+.create h2 {
+  font-size: 20px;
+  /* color: #f1356d; */
+  color: inherit;
+  margin-bottom: 30px;
+}
+.create input,
+.create textarea,
+.create select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 0.4rem;
+  box-sizing: border-box;
+  display: block;
 }

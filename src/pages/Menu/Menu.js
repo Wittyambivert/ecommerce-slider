@@ -16,10 +16,10 @@ const Menu = () => {
     setBlog(remove);
   };
 
-  useEffect(() => {
-    console.log("Applied");
-    console.log(name);
-  }, [name]);
+  // useEffect(() => {
+  //   console.log("Applied");
+  //   console.log(name);
+  // }, [name]);
 
   return (
     <>

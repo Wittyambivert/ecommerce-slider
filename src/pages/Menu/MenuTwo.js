@@ -2,25 +2,23 @@ import ProductSlider from "../../components/ProductSlider/ProductSlider";
 import BlogTwo from "./BlogTwo";
 import "./menu.css";
 import MenuNavbar from "./MenuNavbar";
-import { useState, useEffect } from "react";
+import useFetch from "./useFetch";
 
 const MenuTwo = () => {
-  useEffect(() => {
-    console.log("Applied");
-  }, []);
+  const {
+    data: blogs,
+    isPending,
+    error,
+  } = useFetch("http://localhost:8000/blogs");
 
   return (
     <>
       <div className="section-b">
         <div className="menu-wrapper">
           <MenuNavbar />
-          {/* <Blog blogs={blogs} title="First Section" />
-          <Blog
-            blogs={blogs.filter(
-              (blog) => blog.title === "Phased local complexity"
-            )}
-            title="Second Section"
-          /> */}
+          {error && <div>{error}</div>}
+          {isPending && <div>Loading...</div>}
+          {blogs && <BlogTwo blogs={blogs} title="First Section" />}
         </div>
       </div>
       <ProductSlider />

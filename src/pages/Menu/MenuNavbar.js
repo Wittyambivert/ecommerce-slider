@@ -12,7 +12,9 @@ const MenuNavbar = () => {
         <li>
           <NavLink to="/menu-two">Menu two</NavLink>
         </li>
-        <li>New Blog</li>
+        <li>
+          <NavLink to="/new-blog">New Blog</NavLink>
+        </li>
       </ul>
     </nav>
   );
